@@ -8,6 +8,14 @@ resource "google_dataflow_job" "big_data_job" {
   temp_gcs_location = "gs://my-bucket-df/tmp_dir"
   
   labels = {
-
+   gcp_region = "us-central1"
+   owner = "wf"
+   application_division = "pci"
+   application_name = ""
+   application_role = "auth"
+   environment = "dev"
+   au = ""
+   created = "20211001"
   }
+  
 }
