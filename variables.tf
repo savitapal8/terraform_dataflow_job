@@ -1,10 +1,10 @@
 variable "df-name" {
-    type = "string"
+    type = string
     description = "Name of Dataflow job"
 }
 
 variable "project_id" {
-    type = "string"
+    type = string
     description = "project_id"
 }
 
