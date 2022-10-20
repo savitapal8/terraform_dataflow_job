@@ -2,8 +2,8 @@ resource "google_dataflow_job" "big_data_job" {
   name         = var.df-name
   project      = var.project_id
   kms_key_name = "projects/modular-scout-345114/locations/global/keyRings/keyring-example/cryptoKeys/crypto-key-example"
-  service_account_email = "compute@developer.gserviceaccount.com" #"composer-test-sa2@modular-scout-345114.iam.gserviceaccount.com"  # null
-  ip_configuration = "WORKER_IP_PRIVATE" # null # "WORKER_IP_PUBLIC"
+  service_account_email = "composer-test-sa2@modular-scout-345114.iam.gserviceaccount.com" #"compute@developer.gserviceaccount.com"  # null
+  ip_configuration = "WORKER_IP_PUBLIC" #"WORKER_IP_PRIVATE" # null
   template_gcs_path = "gs://my-bucket-df/templates/template_file/latest_Word_Count"
   temp_gcs_location = "gs://my-bucket-df/tmp_dir"
   
